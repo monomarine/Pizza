@@ -17,6 +17,7 @@ namespace PizzaMVVM
             _container = new UnityContainer();
             _container.RegisterType<ICustomerRepository, CustomerRepository>(
                 new ContainerControlledLifetimeManager() );
+      
         }
         public static IUnityContainer Container => _container;
     }
