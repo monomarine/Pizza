@@ -4,13 +4,13 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Pizza.Models;
 
-public partial class PizzaDbkozlovtsevContext : DbContext
+public partial class PizzaDbContext : DbContext
 {
-    public PizzaDbkozlovtsevContext()
+    public PizzaDbContext()
     {
     }
 
-    public PizzaDbkozlovtsevContext(DbContextOptions<PizzaDbkozlovtsevContext> options)
+    public PizzaDbContext(DbContextOptions<PizzaDbContext> options)
         : base(options)
     {
     }

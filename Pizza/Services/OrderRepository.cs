@@ -11,8 +11,8 @@ namespace Pizza.Services
 {
     internal class OrderRepository :IOrderRepository
     {
-        private readonly PizzaDbkozlovtsevContext _context 
-            = new PizzaDbkozlovtsevContext();
+        private readonly PizzaDbContext _context 
+            = new PizzaDbContext();
 
         public async Task<Order> AddOrderAsync(Order order)
         {
